@@ -38,9 +38,24 @@ background_color = ''
 app.layout = html.Div(
     children=[
         html.H1(
-            'Visualizing Optimizer Steps',
+            'Visualizing Learning Optimizers',
+            style={
+                'textAlign': 'center',
+                'padding': '30px'
+            }
+        ),
+        html.Br(),
+        dcc.Markdown(
+            'Visualize how the Keras optimizers traverse a learning surface. Source code can be found on [Github](https://github.com).',
             style={'textAlign': 'center'}
         ),
+        dcc.Markdown(
+            'Written by [K. R. Chickering](https://www.math.ucdavis.edu/~krc/).',
+            style={
+                'textAlign': 'center',
+            }
+        ),
+        html.Br(),
         html.Table(
             children=[
                 html.Tr([
@@ -132,13 +147,13 @@ app.layout = html.Div(
                         dcc.Graph(
                             id='learning-surface',
                             style={
-                                'height': '90vh',
+                                'height': '80vh',
                             }
                         )
                     ],
                             style={
                                 'textAlign': 'center',
-                                'height': '65%'
+                                'height': '60%'
                             }
                     )
                 ])
@@ -147,7 +162,8 @@ app.layout = html.Div(
                 'textAlign': 'center',
                 'width': '100%'
             }
-        )])
+        )
+    ])
 
 @app.callback(
     Output('nesterov', 'style'),
