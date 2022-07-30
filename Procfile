@@ -1,1 +1,1 @@
-web: gunicorn optimizer:server
+web: gunicorn optimizers:server

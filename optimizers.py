@@ -255,4 +255,4 @@ def update_graph(optimizer, surface, lr, start_x, start_y,
     return fig
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
