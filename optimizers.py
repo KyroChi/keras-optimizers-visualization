@@ -32,6 +32,7 @@ optimizers = {
 }
 
 app = Dash(__name__)
+server = app.server
 
 background_color = ''
 
