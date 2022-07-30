@@ -47,7 +47,7 @@ app.layout = html.Div(
         ),
         html.Br(),
         dcc.Markdown(
-            'Visualize how the Keras optimizers traverse a learning surface. Source code can be found on [Github](https://github.com).',
+            'Visualize how the Keras optimizers traverse a learning surface. Source code can be found on [Github](https://github.com/KyroChi/keras-optimizers-visualization).',
             style={'textAlign': 'center'}
         ),
         dcc.Markdown(
